@@ -9,7 +9,8 @@ pipeline {
 
     stage('Checkout') {
       steps {
-        git 'https://github.com/parasbansal2020/Deployment-App.git'
+        git branch: 'main',
+                    url: 'https://github.com/parasbansal2020/Deployment-App.git'
       }
     }
 
